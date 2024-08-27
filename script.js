@@ -67,7 +67,7 @@ const handleClick = (row, col) => {
 };
 
 const showMoveOptions = (moveOptions) => {
-  moveButtonsContainer.innerHTML = '';  // Clear previous buttons
+  moveButtonsContainer.innerHTML = '';  
   moveOptions.forEach(direction => {
     const moveBtn = document.createElement('button');
     moveBtn.textContent = `Move ${direction}`;
@@ -112,7 +112,7 @@ const handleMove = (direction) => {
       moveHistory.push(`${cell} moved to (${newRow}, ${newCol})`);
       updateMoveHistory();
 
-      moveButtonsContainer.innerHTML = '';  // Clear move buttons after a move is made
+      moveButtonsContainer.innerHTML = '';  
       selectedCharacter = null;
       currentPlayer = currentPlayer === 'A' ? 'B' : 'A';
       currentPlayerDisplay.textContent = `Current Player: ${currentPlayer}`;
