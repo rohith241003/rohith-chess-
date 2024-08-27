@@ -1,0 +1,65 @@
+body {
+    background-color: #343a40;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    gap: 0px;
+    margin-top: 20px;
+  }
+  .cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #495057;
+    color: white;
+  }
+  .cell:nth-child(odd) {
+    background-color: #495057;
+  }
+  .cell:nth-child(even) {
+    background-color: #6c757d;
+  }
+  button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #6c757d;
+  }
+  #move-history {
+    margin-left: 2rem;
+    text-align: left;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+  }
+  #move-history ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  #move-history li {
+    padding: 0.5rem 0;
+  }
+  .restart-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    background-color: #dc3545;
+    border: none;
+    cursor: pointer;
+  }
+  #move-buttons {
+    margin-bottom: 1rem;
+  }
+  
